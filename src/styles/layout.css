@@ -2,73 +2,59 @@
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 3em;
+  padding: 25px;
+  margin: 20px;
 }
 
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
+  /* Adjust header content position for mobile */
+  .header-content {
+    top: -100px; /* Reduce vertical offset on smaller screens */
+    right: 10px; /* Add padding for better spacing */
+    justify-content: center; /* Center content horizontally */
+    flex-direction: column; /* Stack content vertically */
+    padding: 10px;
+  }
+
+  /* Adjust menu for mobile screens */
+  .menu {
+    flex-direction: column; /* Stack the menu items vertically */
+    align-items: center; /* Center-align the items */
     width: 100%;
   }
 
-  .menu {
-    display: none; /* Hide menu by default */
-    flex-direction: column;
-    width: 100%;
+  .menu a {
+    font-size: 18px; /* Increase font size on smaller screens */
+    padding: 10px;
   }
 
-  .menu.show {
-    display: flex; /* Show menu when burger is clicked */
-  }
-
-  .burger {
-    display: flex; /* Show burger icon on smaller screens */
-  }
-}
-
-@media (max-width: 768px) {
-  /* BURGER MENU MOBILE! */
-  .menu {
-    display: none;
-  }
-  .burger {
-    display: block;
-  }
-  .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
-  }
-
-  .burger.active .line:nth-child(2) {
-    opacity: 0;
-    transition: 0.15s linear;
-  }
-
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
-  }
-
-  nav.active .menu {
-    display: block;
-    background-color: white;
+  /* Logo adjustments for mobile */
+  .logo {
     position: absolute;
-    top: 80px;
-    left: 0;
+    top: 10px;
+    left: 10px;
+    transform: scale(0.8); /* Scale down the logo */
+  }
+
+  /* Adjust video for mobile */
+  .header-video {
     width: 100%;
-    box-shadow: 0 0 5px rgba(63, 69, 59, 27);
-    z-index: 1;
+    height: auto; /* Ensure video scales properly */
   }
 
-  nav.active .menu li {
-    margin: 10px 20px;
+  /* Footer adjustments for mobile */
+  .footersection {
+    text-align: center; /* Center-align footer content */
+    margin-bottom: 20px;
   }
 
-  nav.active .menu a {
-    font-size: 24px;
+  .footersection h3 {
+    font-size: 14px; /* Slightly reduce footer heading size */
   }
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+  .footersection a,
+  .footersection p {
+    font-size: 12px; /* Adjust font size for mobile */
   }
 }
