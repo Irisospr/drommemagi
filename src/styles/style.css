@@ -21,3 +21,97 @@ font-style: normal;
 }
 This is obviously, regular type
 */
+
+.logo {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+  display: block;
+}
+
+body {
+  background: rgb(243, 246, 245); /* Fallback for older browsers */
+  background: linear-gradient(to bottom, /* Change the direction to go top to bottom */ rgba(243, 246, 245, 1) 0%, /* Lightest color at the top */ rgba(90, 139, 178, 1) 30%, /* Gradually transition */ rgba(57, 117, 161, 1) 60%, /* Midpoint of the gradient */ rgba(15, 69, 129, 1) 80%, /* Darker towards the bottom */ rgba(0, 79, 139, 1) 100% /* Darkest color at the bottom */);
+  margin: 0; /* Reset margin for full viewport coverage */
+  height: 100vh; /* Ensure it covers the entire screen */
+}
+
+/* Burger menu */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: rgb(255, 225, 221);
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-family: "ff-providence-sans-web-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+.footersection h3 {
+  font-family: "ff-providence-sans-web-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 15px;
+}
+
+.footersection a,
+p {
+  font-family: "obviously", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  list-style: none;
+  font-size: 10px;
+  color: white;
+}
