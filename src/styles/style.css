@@ -87,7 +87,7 @@ body {
   transition: transform 0.3s ease; /* Smooth transition */
 }
 
-.nyhedsbrev h1 {
+.nyhedsbrevdiv h1 {
   font-family: "ff-providence-sans-web-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -96,7 +96,7 @@ body {
   font-size: 30px;
 }
 
-.nyhedsbrev h2 {
+.nyhedsbrevdiv h2 {
   font-family: "ff-providence-sans-web-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
