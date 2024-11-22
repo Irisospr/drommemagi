@@ -87,6 +87,58 @@ body {
   transition: transform 0.3s ease; /* Smooth transition */
 }
 
+.nyhedsbrev h1 {
+  font-family: "ff-providence-sans-web-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.nyhedsbrev h2 {
+  font-family: "ff-providence-sans-web-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-family: "obviously", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 15px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
 .footersection h3 {
   font-family: "ff-providence-sans-web-pro", sans-serif;
   font-weight: 700;
