@@ -87,6 +87,20 @@ body {
   transition: transform 0.3s ease; /* Smooth transition */
 }
 
+.eventssection h1 {
+  font-family: "ff-providence-sans-web-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.eventssection {
+  margin: 70px;
+  padding: 70px;
+}
+
 .nyhedsbrevdiv h1 {
   font-family: "ff-providence-sans-web-pro", sans-serif;
   font-weight: 700;
