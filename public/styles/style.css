@@ -34,7 +34,15 @@ This is obviously, regular type
 
 body {
   background: rgb(243, 246, 245); /* Fallback for older browsers */
-  background: linear-gradient(to bottom, /* Change the direction to go top to bottom */ rgba(243, 246, 245, 1) 0%, /* Lightest color at the top */ rgba(90, 139, 178, 1) 30%, /* Gradually transition */ rgba(57, 117, 161, 1) 60%, /* Midpoint of the gradient */ rgba(15, 69, 129, 1) 80%, /* Darker towards the bottom */ rgba(0, 79, 139, 1) 100% /* Darkest color at the bottom */);
+  background: linear-gradient(
+    to bottom,
+    /* Change the direction to go top to bottom */ rgba(243, 246, 245, 1) 0%,
+    /* Lightest color at the top */ rgba(90, 139, 178, 1) 30%,
+    /* Gradually transition */ rgba(57, 117, 161, 1) 60%,
+    /* Midpoint of the gradient */ rgba(15, 69, 129, 1) 80%,
+    /* Darker towards the bottom */ rgba(0, 79, 139, 1) 100%
+      /* Darkest color at the bottom */
+  );
   margin: 0; /* Reset margin for full viewport coverage */
   height: 100vh; /* Ensure it covers the entire screen */
 }
@@ -169,4 +177,64 @@ p {
   list-style: none;
   font-size: 10px;
   color: white;
+}
+.hats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 100px;
+}
+
+.vil-du-st-tte-dr-mmemagi {
+  color: #faf9f6;
+  text-align: left;
+  font-family: "ProvidenceSansPro-Regular", sans-serif;
+  font-size: 48px;
+  line-height: 34px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.original {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: visible;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-image {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: visible;
+}
+
+.hover-image img {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-image img.hover {
+  position: absolute;
+  top: -55%;
+  left: 0%;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-image:hover img.hover {
+  opacity: 1;
+}
+
+.hover-image:hover img.original {
+  opacity: 0;
 }
