@@ -58,3 +58,15 @@ footer {
     font-size: 12px; /* Adjust font size for mobile */
   }
 }
+.event-container{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card :hover{
+  transform: scale(1.05) translateY(-10px) ;
+  z-index: 5;
+}
