@@ -34,7 +34,15 @@ This is obviously, regular type
 
 body {
   background: rgb(243, 246, 245); /* Fallback for older browsers */
-  background: linear-gradient(to bottom, /* Change the direction to go top to bottom */ rgba(243, 246, 245, 1) 0%, /* Lightest color at the top */ rgba(90, 139, 178, 1) 30%, /* Gradually transition */ rgba(57, 117, 161, 1) 60%, /* Midpoint of the gradient */ rgba(15, 69, 129, 1) 80%, /* Darker towards the bottom */ rgba(0, 79, 139, 1) 100% /* Darkest color at the bottom */);
+  background: linear-gradient(
+    to bottom,
+    /* Change the direction to go top to bottom */ rgba(243, 246, 245, 1) 0%,
+    /* Lightest color at the top */ rgba(90, 139, 178, 1) 30%,
+    /* Gradually transition */ rgba(57, 117, 161, 1) 60%,
+    /* Midpoint of the gradient */ rgba(15, 69, 129, 1) 80%,
+    /* Darker towards the bottom */ rgba(0, 79, 139, 1) 100%
+      /* Darkest color at the bottom */
+  );
   margin: 0; /* Reset margin for full viewport coverage */
   height: 100vh; /* Ensure it covers the entire screen */
 }
@@ -104,4 +112,26 @@ p {
   list-style: none;
   font-size: 10px;
   color: white;
+}
+.hat-rabbit-1,
+.hat-rabbit-1 * {
+  box-sizing: border-box;
+}
+
+.hat-rabbit-1 {
+  width: 179.19px;
+  height: 157.98px;
+  position: relative;
+  overflow: visible;
+}
+.doner-rabbit,
+.doner-rabbit * {
+  box-sizing: border-box;
+}
+
+.doner-rabbit {
+  width: 179.19px;
+  height: 157.98px;
+  position: relative;
+  overflow: visible;
 }
