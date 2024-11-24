@@ -44,7 +44,7 @@ body {
       /* Darkest color at the bottom */
   );
   margin: 0; /* Reset margin for full viewport coverage */
-  height: 100vh; /* Ensure it covers the entire screen */
+  height: 100%; /* Ensure it covers the entire screen */
 }
 .header {
   position: relative;
