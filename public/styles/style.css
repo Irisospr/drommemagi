@@ -95,40 +95,35 @@ body {
   transition: transform 0.3s ease; /* Smooth transition */
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: "ff-providence-sans-web-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
   color: white;
   text-align: center;
-  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .event-container {
   padding: 70px;
+  margin-bottom: 40px;
 }
 
-.nyhedsbrevdiv h1 {
-  font-family: "ff-providence-sans-web-pro", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: white;
-  text-align: center;
-  font-size: 30px;
-}
-
+.nyhedsbrevdiv h1,
 .nyhedsbrevdiv h2 {
   font-family: "ff-providence-sans-web-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
   color: white;
   text-align: center;
-  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 form {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 label {
@@ -141,6 +136,7 @@ label {
   color: white;
   font-size: 15px;
 }
+
 input {
   width: 100%;
   padding: 8px;
@@ -148,6 +144,7 @@ input {
   border: 1px solid #ccc;
   border-radius: 12px;
 }
+
 button {
   padding: 10px 15px;
   background-color: #007bff;
@@ -156,6 +153,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #0056b3;
 }
@@ -178,10 +176,12 @@ p {
   font-size: 10px;
   color: white;
 }
+
 .hats {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; /* Allow wrapping of items */
+  gap: 100px;
   height: 100vh;
   width: auto;
   gap: 100px;
@@ -237,4 +237,38 @@ p {
 
 .hover-image:hover img.original {
   opacity: 0;
+}
+
+.sky-2 {
+  position: relative;
+  padding-top: 50px; /* Adds space at the top */
+  margin-bottom: 40px; /* Adds space below */
+}
+
+.vector-966 {
+  position: relative;
+  height: 436px;
+  width: 100%;
+}
+
+.skytitle {
+  position: absolute;
+  top: 30%; /* Adjust the top position */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 48px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+}
+
+.skytext {
+  position: absolute;
+  top: 50%; /* Adjust the top position */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
 }
