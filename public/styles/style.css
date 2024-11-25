@@ -180,14 +180,11 @@ p {
 .hats {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* Allow wrapping of items */
+  align-items: center; /* Allow wrapping of items */
   gap: 100px;
-}
-
-.hats > * {
-  flex: 1;
-  max-width: 300px; /* Control width to prevent overlap */
+  height: 100vh;
+  width: auto;
+  gap: 100px;
 }
 
 .vil-du-st-tte-dr-mmemagi {
@@ -244,18 +241,34 @@ p {
 
 .sky-2 {
   position: relative;
-  padding-top: 50px;
-  margin-bottom: 40px;
+  padding-top: 50px; /* Adds space at the top */
+  margin-bottom: 40px; /* Adds space below */
 }
 
 .vector-966 {
-  height: 436px;
   position: relative;
-  margin-bottom: 20px;
+  height: 436px;
+  width: 100%;
 }
 
-.skytext,
 .skytitle {
-  position: relative;
-  margin-bottom: 20px;
+  position: absolute;
+  top: 30%; /* Adjust the top position */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 48px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+}
+
+.skytext {
+  position: absolute;
+  top: 50%; /* Adjust the top position */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
 }
