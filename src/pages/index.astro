@@ -100,6 +100,13 @@ const cards = [
         </div>
         <div class="skytitle">HVEM ER VI</div>
       </div>
+       <div class="tryllekunstner">
+        <h1>Tryllekunstner</h1>
+      <div class="cards">
+      {cards.map(card => (
+        <Card {...card} />
+      ))}
+    </div>
       <h1>KOMMENDE BEGIVENHEDER</h1>
       <div class="event-container">
         <div class="bluecard">
