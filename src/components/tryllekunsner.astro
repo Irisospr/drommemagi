@@ -1,0 +1,67 @@
+---
+const cards = [
+  { main: '/public/assets/jokeer.png', hover: '/public/assets/spiiil1.png', alt: 'Card 1' },
+  { main: '/public/assets/jokeer.png', hover: '/public/assets/spil2.png', alt: 'Card 2' },
+  { main: '/public/assets/jokeer.png', hover: '/public/assets/spil3.png', alt: 'Card 3' },
+  { main: '/public/assets/jokeer.png', hover: '/public/assets/spil4.png', alt: 'Card 4' },
+  { main: '/public/assets/jokeer.png', hover: '/public/assets/spil5.png', alt: 'Card 5' },
+  { main:'/public/assets/jokeer.png', hover: '/public/assets/spil6.png', alt: 'Card 6' },
+  { main: '/public/assets/jokeer.png', hover: '/public/assets/spil7.png', alt: 'Card 7' },
+];
+---
+
+
+
+<style>
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    padding-top: 150%; /* Aspect ratio 2:3 */
+  }
+
+  .card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+
+  .main-image {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .hover-image {
+    opacity: 0;
+    z-index: 2;
+  }
+
+  .card:hover .main-image {
+    opacity: 0;
+  }
+
+  .card:hover .hover-image {
+    opacity: 1;
+  }
+</style>
+
+<div class="cards">
+  {cards.map(card => (
+    <div class="card">
+      <img src={card.main} alt={`${card.alt} Main`} class="main-image" />
+      <img src={card.hover} alt={`${card.alt} Hover`} class="hover-image" />
+    </div>
+  ))}
+</div>
+
+
+</style>

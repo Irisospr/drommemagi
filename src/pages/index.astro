@@ -1,5 +1,9 @@
 ---
-
+import Card from '../components/tryllekunsner.astro';
+const cards = [
+  { main: '/images/main1.png', hover: '/images/hover1.png', alt: 'Card 1' },
+  
+];
 ---
 
 <html lang="da">
@@ -72,6 +76,16 @@
       </div>
     </header>
     <main>
+ <div class="tryllekunstner">
+        <h1>Tryllekunstner</h1>
+      <div class="cards">
+      {cards.map(card => (
+        <Card {...card} />
+      ))}
+    </div>
+
+
+
       <h1>KOMMENDE BEGIVENHEDER</h1>
       <div class="event-container">
         <div class="card">
@@ -85,6 +99,10 @@
         </div>
         <div class="card">
           <img src="/assets/galla.png" alt="" />
+      </div>
+     
+
+
         </div>
       </div>
       <div class="nyhedsbrevdiv">
